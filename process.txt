@@ -1,0 +1,44 @@
+bunx --bun shadcn@latest init
+
+bunx --bun shadcn@latest add button
+
+npx shadcn@latest add avatar
+
+npx shadcn@latest add avatar
+
+bun add hono
+
+react-query
+
+1:
+VLLM_LOGGING_LEVEL=WARNING CUDA_VISIBLE_DEVICES=1,2,3 vllm serve Qwen/Qwen2-7B-Instruct --max-model-len=4096 --max-num-seqs=1 --disable-log-requests --gpu-memory-utilization=0.80 --trust-remote-code
+
+/home/suzyhzbaba/miniconda3/envs/cosyvoice/bin/python download.py
+
+2:
+PYTHONPATH=third_party/Matcha-TTS /home/suzyhzbaba/miniconda3/envs/cosyvoice/bin/python api.py
+
+webui
+git clone https://github.com/open-webui/open-webui.git
+cd open-webui/
+
+# Copying required .env file
+cp -RPp .env.example .env
+
+# Building Frontend Using Node
+npm install
+npm run build
+
+cd ./backend
+
+# Optional: To install using Conda as your development environment, follow these instructions:
+# Create and activate a Conda environment
+conda create --name open-webui-env python=3.11
+conda activate open-webui-env
+
+# Install dependencies
+pip install -r requirements.txt -U
+
+# Start the application
+3:
+bash start.sh
