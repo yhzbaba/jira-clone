@@ -16,6 +16,12 @@ bun add node-appwrite@14.1.0
 
 sudo bun add server-only
 
+前端到中间件的调用逻辑：
+1、(@/app/(auth)/sign-up.page.tsx) tsx中：
+const {mutate} = useRegister(); 来自@/features/auth/api/use-register
+
+
+
 1:
 VLLM_LOGGING_LEVEL=WARNING CUDA_VISIBLE_DEVICES=1,2,3 vllm serve Qwen/Qwen2-7B-Instruct --max-model-len=4096 --max-num-seqs=1 --disable-log-requests --gpu-memory-utilization=0.80 --trust-remote-code
 
